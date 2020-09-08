@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ezgo Cabs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <style>
+    #slider {
+      overflow: hidden;
+      width: 90%;
+      margin: 60px auto 20px;
+      box-shadow: 0px 4px 10px #cccccc;
+      border-radius: 5px;
+      padding: 0px 0px;
+      /* border: 4px solid #28334aff ; */
+    }
+    #slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 15s slider infinite;
+    }
+    #slider figure img {
+      width: 20%;
+      float: left;
+    }
+
+    @keyframes slider {
+      0% {
+        left: 0;
+      }
+      20% {
+        left: 0;
+      }
+      25% {
+        left: -100%;
+      }
+      45% {
+        left: -100%;
+      }
+      50% {
+        left: -200%;
+      }
+      70% {
+        left: -200%;
+      }
+      75% {
+        left: -300%;
+      }
+      95% {
+        left: -300%;
+      }
+      100% {
+        left: -400%;
+      }
+    }
+    .content-table{
+      border-collapse: collapse;
+      width: 100%; 
+      text-align: center; 
+      border: 2px 0px solid black;
+      color: #fff;
+      margin-bottom: 30px;
+      border-radius: 2px;
+      overflow: hidden;
+      box-shadow: 0px 1px 2px
+    }
+    .content-table th, .content-table td{
+      padding: 6px;
+      border: 1px solid black;
+      font-size: 18px;
+    }
+    .content-table thead th{
+      background-color: #faed26;
+      font-size: 19px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .content-table tbody tr{
+      border-bottom: 1px solid #dddddd;
+    }
+    .services p:first-of-type{
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    td{
+      padding: 6px;
+      border: 1px solid black;
+      font-size: 18px;
+    }
+    hr {
+      margin: 25px auto;
+      width:50%;
+    }
+    .table2 {
+      margin-top: 30px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .container {
+    background-color: #fafafa;
+    margin: 200px;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    }
+    .heading {
+    font-size: 35px;
+    color: #faed26;
+    text-align: center;
+    margin-bottom: 15px;
+    }
+    .container-form {
+    padding: 20px 0;
+    margin: 0 auto;
+    color: #000;
+    width: 60%;
+    }
+    form {
+    display: grid;
+    grid-row-gap: 20px;
+    }
+    form p {
+    font-weight: 600;
+    }
+    .form-field {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .form-field p {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+
+    input,select {
+    padding: 10px 15px !important;
+    }
+    .booking-form input, .booking-form select {
+      height: 35px;
+      margin: 10px 0;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      width: 60%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="inner-width">
+      <a href="/" class="logo"></a>
+      <button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <!-- <a href="#education">Education</a>
+        <a href="#works">Works</a> -->
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="inner-width">
+      <div class="content">
+        <h1>EZGO Cabs</h1>
+        <h2>A Cab rental service</h2>
+        <!-- <div class="sm">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin-in"></a>
+          <a href="#" class="fab fa-youtube"></a>
+        </div> -->
+        <div class="buttons">
+          <a href="#contact">Contact me</a>
+          <a href="#services">Bookings</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home -->
+  <section id="about">
+    <div class="inner-width">
+      <h1 class="section-title">About</h1>
+      <div class="about-content">
+        <img src="images/pic.png" alt="" class="about-pic">
+        <div class="about-text">
+          <h2>EZGO Cabs</h2>
+          <h3>
+            <span>Faster</span>
+            <span>Easier</span>
+            <span>Convenient</span>
+          </h3>
+          <p>
+            Ezgo Cabs is a true service based online car booking portal which provides car rental services in all of the major cities in Gujarat. We have an experienced team of members who have in-depth information about car rental operations. In addition, our team is capable of handling car rental related problems whether it be the bookings you have made or for any other specific transport related issue. We attend your queries with great personal care.
+          </p>
+          <p>Ezgo Cabs has carved a niche in the field of Online Cab Booking services by gaining wide range of customers across most of the major cities in Maharashtra. We are happy to receive warm acceptance from all of our customers ranging from an ordinary travel enthusiast to a global corporate traveller.
+          </p>
+          <p>We provide both local and outstation travel plans. In the local plan we provide packages for full days and half days. And in the outstation plan we provide packages for round trip, one way drop and multi city travels.
+          </p>
+        </div>
+
+        <div id="slider">
+          <figure>
+            <img src="images/slideshow/1.png">
+            <img src="images/slideshow/2.jpg">
+            <img src="images/slideshow/3.jpg">
+            <img src="images/slideshow/4.jpeg">
+            <img src="images/slideshow/5.jpg">
+          </figure>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="dark">
+    <div class="inner-width">
+      <h1 class="section-title">Services</h1>
+      <div class="services">
+
+        <table class="content-table" >
+          <thead>
+            <tr>
+              <th rowspan="2">Destination (From Mumbai)</th>
+              <th colspan="4">Price (in Rupees)</th>
+            </tr>
+            <tr>
+              <th>Mini</th>
+              <th>Sedan</th>
+              <th>SUV</th>
+              <th>Innova</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pune</td>
+              <td>1699/-</td>
+              <td>1799/-</td>
+              <td>2599/-</td>
+              <td>2999/-</td>
+            </tr>
+            <tr>
+              <td>Nashik</td>
+              <td>1899/-</td>
+              <td>2099/-</td>
+              <td>2699/-</td>
+              <td>3199/-</td>
+            </tr>
+            <tr>
+              <td>Lonavala</td>
+              <td>1599/-</td>
+              <td>1799/-</td>
+              <td>2499/-</td>
+              <td>2799/-</td>
+            </tr>
+            <tr>
+              <td>Shirdi</td>
+              <td>2699/-</td>
+              <td>2899/-</td>
+              <td>4599/-</td>
+              <td>4999/-</td>
+            </tr>
+            <tr>
+              <td>Aurangabad</td>
+              <td>4099/-</td>
+              <td>4199/-</td>
+              <td>6599/-</td>
+              <td>6999/-</td>
+            </tr>
+            <tr>
+              <td>Ahmadnagar</td>
+              <td>3399/-</td>
+              <td>3499/-</td>
+              <td>5999/-</td>
+              <td>6599/-</td>
+            </tr>
+            <tr>
+              <td>Palghar</td>
+              <td>1799/-</td>
+              <td>1999/-</td>
+              <td>2499/-</td>
+              <td>2799/-</td>
+            </tr>
+            <tr>
+              <td>Vapi/Silvassa/Daman</td>
+              <td>2199/-</td>
+              <td>2299/-</td>
+              <td>3299/-</td>
+              <td>3599/-</td>
+            </tr>
+            <tr>
+              <td>Surat</td>
+              <td>2999/-</td>
+              <td>3199/-</td>
+              <td>5599/-</td>
+              <td>5999/-</td>
+            </tr>
+            <tr>
+              <td>Satara</td>
+              <td>3099/-</td>
+              <td>3199/-</td>
+              <td>5299/-</td>
+              <td>5599/-</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="container-form">
+          <form action="https://formspree.io/pointyengineer@gmail.com" class="booking-form" onsubmit="return bookingValidation()">
+            <h2 class="heading heading-yellow">Online Booking</h2>
+          
+            <div class="form-field">
+              <p>Your Name</p>
+              <input type="text" name="Booking Name" id="book-name" placeholder="Your Name" >
+            </div>
+            <div class="form-field">
+              <p>Your Email</p>
+              <input type="email" name="Booking Email" id="book-email" placeholder="Your email">
+            </div>
+            <div class="form-field">
+              <p>Your Mobile</p>
+              <input type="number" name="Booking Mobile Number" id="book-mobile" placeholder="Your number">
+            </div>
+            <div class="form-field">
+              <p>Destination</p>
+              <select name="Booking Journey" id="book-journey">
+                <option value="null" selected>--------</option>
+                <option value="MumToPun">Mumbai to Pune</option>
+                <option value="MumToNas">Mumbai to Nashik</option>
+                <option value="MumToLon">Mumbai to Lonavla</option>
+                <option value="MumToShr">Mumbai to Shirdi</option>
+                <option value="MumToAur">Mumbai to Aurangabad</option>
+                <option value="MumToAhm">Mumbai to Ahmadnagar</option>
+                <option value="MumToPal">Mumbai to Palghar</option>
+                <option value="MumToVap">Mumbai to Vapi/Silvassa/Daman</option>
+                <option value="MumToSur">Mumbai to Surat</option>
+                <option value="MumToSat">Mumbai to Satara</option>
+              </select>
+              </div>
+            <div class="form-field">
+              <p>Date &nbsp;&nbsp;</p>
+              <input type="date" name="Booking Date" id="book-date">
+            </div>
+            <input id="submit-booking" class="btn" type="submit">
+            <div id="book-status">
+            </div>
+          </form>
+        </div>
+        
+        <hr>
+
+        <p>
+          <em>
+            On exceeding the threshold km limit, increase in price for every extra km will be as follows: <br>
+            Mini : Rs. 10 &nbsp;&nbsp;
+            Sedan : Rs. 11 &nbsp;&nbsp;
+            SUV : Rs. 14 &nbsp;&nbsp;
+            Innova : Rs. 16
+          </em>
+          <hr>
+        </p>
+        <p>
+          <strong>OUT STATION ROUND TRIP SMART PLAN:</strong>  <br>
+          1. Minimum 250 km charges for 12 hrs<br>
+          2. Per km. cost for Mini, Sedan, SUV, Innova are Rs.10,     Rs.11,      Rs.14,     Rs.16 respectively<br>
+          3. D/A is 250 for 12 hrs.<br>
+          4. Extra hours after midnight, upto 4 hours cost Rs.120/- per hour. After every midnight or on completion of 24 hours next day charges are applied. (250 km charges with 300 D/A)<br>
+          <em><strong>NOTE:</strong> Start date upto midnight equals 1 day.</em><br>
+          <hr>
+        </p>
+ 
+        <p>
+          OUT STATION Round trips are also available in our DELUXE PLAN <br>
+          300km 300 D/A km rates as mentioned above <br>
+          <hr>
+        </p>
+          
+        <p>
+          Separate package available for round trips above 700km package at best price (All rates are negotiable) <br>
+          You will be directed to contact the cab driver<br>
+          ***Clients are requested to fix fare on call***<br>
+        </p>
+        
+        <table class="content-table table2">
+
+          <thead>
+            <tr>
+              <th colspan="5">RENTAL (LOCAL/OUTSTATION)</th>
+            </tr>
+            <tr>
+              <th rowspan="2">Time (in&nbsp;hours)</th>
+              <th rowspan="2">Distance (in&nbsp;kms)</th>
+              <th colspan="3">Price</th>
+            </tr>
+            <tr>
+              <th>Mini</th>
+              <th>Sedan</th>
+              <th>SUV</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+
+            <tr>
+              <td>4</td>
+              <td>40</td>
+              <td>800</td>
+              <td>900</td>
+              <td>1200</td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>60</td>
+              <td>1200</td>
+              <td>1400</td>
+              <td>1800</td>
+            </tr>
+
+            <tr>
+              <td>8</td>
+              <td>80</td>
+              <td>1700</td>
+              <td>1849</td>
+              <td>2400</td>
+            </tr>
+
+            <tr>
+              <td>10</td>
+              <td>100</td>
+              <td>1999</td>
+              <td>2249</td>
+              <td>2800</td>
+            </tr>
+
+            <tr>
+              <td>12</td>
+              <td>120</td>
+              <td>2200</td>
+              <td>2500</td>
+              <td>3000</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+        <p style="align-content: center;">
+          <p>Rate for extra distances travelled:</p>
+            <p>* Rs 100/- for 12km</p>
+            <p>* Rs 120/- for 15km</p>
+            <p>* Rs 150/- for 18km</p>
+          </p>
+        
+        <hr> 
+          <p>EZGO is not responsible for the payment of Toll, Parking, State Tax and GST</p>
+        <hr> 
+        
+
+        <p>
+          For Further Details, Contact Us..
+        </p>
+
+        
+        <!-- <div class="service">
+          <i class="icon fas fa-paint-brush"></i>
+          <h4>Design</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-pager"></i>
+          <h4>Build Websites</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-database"></i>
+          <h4>Manage Databases</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fab fa-android"></i>
+          <h4>Android Apps</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-credit-card"></i>
+          <h4>Ui Design</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-keyboard"></i>
+          <h4>Edit Texts</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <!-- <section id="education">
+    <div class="inner-width">
+      <h1 class="section-title">Education & Experiences</h1>
+      <div class="time-line">
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Works -->
+  <!-- <section id="works" class="dark">
+    <div class="inner-width">
+      <h1 class="section-title">Works</h1>
+      <div class="works">
+        <a href="images/works/1.jpg" class="work">
+          <img src="images/works/1.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/2.jpg" class="work">
+          <img src="images/works/2.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/3.jpg" class="work">
+          <img src="images/works/3.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/4.jpg" class="work">
+          <img src="images/works/4.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/5.jpg" class="work">
+          <img src="images/works/5.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/6.jpg" class="work">
+          <img src="images/works/6.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="inner-width">
+      <h1 class="section-title">Get in touch</h1>
+      <div class="contact-info">
+        <div class="item">
+          <i class="fas fa-mobile-alt"></i>
+          +111 111111111
+        </div>
+
+        <div class="item">
+          <i class="fas fa-envelope"></i>
+          email@address.com
+        </div>
+
+        <div class="item">
+          <i class="fas fa-map-marker-alt"></i>
+          New York, United States
+        </div>
+      </div>
+
+      <form action="https://formspree.io/pointyengineer@gmail.com"
+      method="POST" class="contact-form" onsubmit="return contactValidation()">
+        <input name="Name" type="text" id="nameZone" placeholder="Your Full Name">
+        <input name="Email" type="email" id="emailZone" placeholder="Your Email">
+        <input name="Subject" type="text" id="subjectZone" placeholder="Subject">
+        <textarea name="Message" id="messageZone" placeholder="Message"></textarea>
+        <input type="submit" value="Send Message" class="btn" id="submit-contact">
+      </form>
+      <div id="statusZone"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="inner-width">
+      <div class="copyright">
+        &copy; 2020 | Created & Designed By <a href="#">darkcode</a>
+      </div>
+      <div class="sm">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin-in"></a>
+        <a href="#" class="fab fa-youtube"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Go Top BTN -->
+  <button class="goTop fas fa-arrow-up"></button>
+
+</body>
+</html>
