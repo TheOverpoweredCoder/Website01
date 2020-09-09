@@ -299,7 +299,7 @@ hr {
 }
 .table2 {
 	margin-top: 30px;
-	width: 80%;
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -400,55 +400,6 @@ select {
 	flex-wrap: wrap;
 }
 
-.skill {
-	width: calc(50% - 20px);
-	margin: 15px 0;
-}
-
-.skill-info {
-	display: flex;
-	justify-content: space-between;
-}
-
-.skill-bar {
-	height: 3px;
-	background-color: #ddd;
-	margin-top: 14px;
-	position: relative;
-}
-
-.skill-bar::after {
-	content: "";
-	position: absolute;
-	height: 6px;
-	background-color: #faed26;
-	bottom: 0;
-}
-
-.html:after {
-	width: 90%;
-}
-
-.css:after {
-	width: 80%;
-}
-
-.js:after {
-	width: 70%;
-}
-
-.php:after {
-	width: 60%;
-}
-
-.mysql:after {
-	width: 90%;
-}
-
-.cs:after {
-	width: 80%;
-}
-
 section.dark {
 	background-color: #28334aff;
 }
@@ -470,40 +421,8 @@ section.dark .section-title::after {
 	flex-wrap: wrap;
 }
 
-.service {
-	width: calc(33% - 20px);
-	text-align: center;
-	border: 1px solid #faed26;
-	border-radius: 6px;
-	margin: 20px 0;
-	padding: 40px 20px;
-	color: #fff;
-	cursor: pointer;
-	transition: .3s linear;
-}
-
-.service .icon {
-	color: #faed26;
-	font-size: 40px;
-	margin-bottom: 20px;
-	transition: .3s linear;
-}
-
-.service h4 {
-	font-size: 16px;
-	margin-bottom: 6px;
-}
-
 .services p {
 	text-align: center;
-	color: #fff;
-}
-
-.service:hover {
-	background-color: #faed26;
-}
-
-.service:hover .icon {
 	color: #fff;
 }
 
@@ -512,94 +431,6 @@ section.dark .section-title::after {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-}
-
-.block {
-	width: calc(50% - 20px);
-	background-color: #fff;
-	border: 1px solid #ddd;
-	margin: 10px 0;
-	padding: 30px;
-	position: relative;
-}
-
-.block::before {
-	content: "";
-	position: absolute;
-	width: 1px;
-	height: 120%;
-	background-color: #ddd;
-	left: -20px;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-.block::after {
-	content: "";
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	background-color: #faed26;
-	left: -28px;
-	top: 30px;
-	border-radius: 50%;
-}
-
-.block h3 {
-	font-size: 16px;
-	margin: 10px 0;
-}
-
-.block p {
-	font-size: 15px;
-	color: #444;
-}
-
-.work {
-	width: calc(33% - 10px);
-	overflow: hidden;
-	border-radius: 6px;
-	margin: 10px 0;
-	cursor: pointer;
-	position: relative;
-}
-
-.work img {
-	width: 100%;
-	height: 100%;
-	transition: .4s linear;
-}
-
-.work::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: #faed26cc;
-	transition: .2s linear;
-	opacity: 0;
-	transform: scale(0);
-}
-
-.work .info {
-	position: absolute;
-	z-index: 2;
-	bottom: 40px;
-	left: 40px;
-	color: #fff;
-	transition: .4s linear;
-	opacity: 0;
-}
-
-.work:hover img {
-	transform: scale(1.6) rotate(25deg);
-}
-
-.work:hover::before,
-.work:hover .info {
-	opacity: 1;
-	transform: scale(1);
 }
 
 .contact-info {
@@ -790,21 +621,12 @@ footer {
 		font-size: 14px;
 	}
 
-	.service {
-		width: calc(50% - 20px);
-	}
-
 	.container-form {
 		width: 80%;
 	}
 
-	.block {
-		width: calc(100% - 20px);
-		margin-left: auto;
-	}
-
-	.work {
-		width: calc(50% - 10px);
+	.form-field p {
+		font-size: 16px;
 	}
 
 	.contact-info .item {
@@ -822,12 +644,8 @@ footer {
 		width: 90%;
 	}
 
-	.skill {
-		width: 100%;
-	}
-
-	.service {
-		width: 100%;
+	.form-field p {
+		font-size: 14px;
 	}
 
 	.content-table thead th {
@@ -836,10 +654,6 @@ footer {
 
 	.content-table td {
 		font-size: 11px;
-	}
-
-	.work {
-		width: 100%;
 	}
 
 	.nameZone,
