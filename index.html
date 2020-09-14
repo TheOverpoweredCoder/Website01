@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ezgo Cabs</title>
+  <title>Ezgo Cab</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
@@ -41,7 +41,7 @@
   <section id="home">
     <div class="inner-width">
       <div class="content">
-        <h1>EZGO Cabs</h1>
+        <h1>EZGO Cab</h1>
         <h2>A Cab rental service</h2>
         <!-- <div class="sm">
           <a href="#" class="fab fa-facebook-f"></a>
@@ -64,16 +64,16 @@
       <div class="about-content">
         <img src="images/pic.png" alt="" class="about-pic">
         <div class="about-text">
-          <h2>EZGO Cabs</h2>
+          <h2>EZGO Cab</h2>
           <h3>
             <span>Faster</span>
             <span>Easier</span>
             <span>Convenient</span>
           </h3>
           <p>
-            Ezgo Cabs is a true service based online car booking portal which provides car rental services in all of the major cities in Gujarat. We have an experienced team of members who have in-depth information about car rental operations. In addition, our team is capable of handling car rental related problems whether it be the bookings you have made or for any other specific transport related issue. We attend your queries with great personal care.
+            Ezgo Cab is a true service based online car booking portal which provides car rental services in all of the major cities in Gujarat. We have an experienced team of members who have in-depth information about car rental operations. In addition, our team is capable of handling car rental related problems whether it be the bookings you have made or for any other specific transport related issue. We attend your queries with great personal care.
           </p>
-          <p>Ezgo Cabs has carved a niche in the field of Online Cab Booking services by gaining wide range of customers across most of the major cities in Maharashtra. We are happy to receive warm acceptance from all of our customers ranging from an ordinary travel enthusiast to a global corporate traveller.
+          <p>Ezgo Cabs have carved a niche in the field of Online Cab Booking services by gaining wide range of customers across most of the major cities in Maharashtra. We are happy to receive warm acceptance from all of our customers ranging from an ordinary travel enthusiast to a global corporate traveller.
           </p>
           <p>We provide both local and outstation travel plans. In the local plan we provide packages for full days and half days. And in the outstation plan we provide packages for round trip, one way drop and multi city travels.
           </p>
@@ -82,8 +82,8 @@
         <div id="slider">
           <figure>
             <img src="images/slideshow/1.png">
-            <img src="images/slideshow/2.jpg">
-            <img src="images/slideshow/3.jpg">
+            <img src="images/slideshow/2.png">
+            <img src="images/slideshow/3.png">
             <img src="images/slideshow/4.jpeg">
             <img src="images/slideshow/5.jpg">
           </figure>
@@ -218,10 +218,22 @@
                 <option value="MumToSat">Mumbai to Satara</option>
               </select>
               </div>
+              <div class="form-field">
+              <p>Vehicle</p>
+              <select name="Booking Vehicle" id="book-vehicle">
+                <option value="null" selected>--------</option>
+                <option value="Mini">Mini</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Innova">Innova</option>
+              </select>
+            </div>
             <div class="form-field">
               <p>Date &nbsp;&nbsp;</p>
               <input type="date" name="Booking Date" id="book-date">
             </div>
+            <p id="book-message">
+            </p>
             <input id="submit-booking" class="btn" type="submit">
             <div id="book-status">
             </div>
