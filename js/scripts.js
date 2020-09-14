@@ -55,6 +55,7 @@ const contactValidation = () => {
 	}
 	if (message.length < 20) {
 		text = 'Please Enter Atleast 20 Characters';
+		book_message.innerHTML = message;
 		error_message.innerHTML = text;
 		return false;
 	}
@@ -67,10 +68,14 @@ const bookingValidation = () => {
 	let email = document.getElementById('book-email').value;
 	let mobile = document.getElementById('book-mobile').value;
 	let journey = document.getElementById('book-journey').value;
+	let vehicle = document.getElementById('book-vehicle').value;
 	let date = document.getElementById('book-date').value;
+
+	let book_message = document.getElementById('book-message');
 	let error_message = document.getElementById('book-status');
 
 	let text;
+	let message = 'Yout total will be ';
 
 	if (name.length < 5) {
 		text = 'Please Enter valid Name';
@@ -92,11 +97,200 @@ const bookingValidation = () => {
 		error_message.innerHTML = text;
 		return false;
 	}
+	if (vehicle === 'null') {
+		text = 'Please Select a Vehicle';
+		error_message.innerHTML = text;
+		return false;
+	}
 	if (date === '') {
 		text = 'Please Select a Date';
 		error_message.innerHTML = text;
 		return false;
 	}
-	alert('Form Submitted Successfully!');
+
+	if (journey === 'MumToPun') {
+		if (vehicle === 'Mini') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Sedan') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'SUV') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Innova') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+	}
+	if (journey === 'MumToNas') {
+		if (vehicle === 'Mini') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Sedan') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'SUV') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Innova') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+	}
+	if (journey === 'MumToLon') {
+		if (vehicle === 'Mini') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Sedan') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'SUV') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Innova') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+	}
+	if (journey === 'MumToShr') {
+		if (vehicle === 'Mini') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Sedan') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'SUV') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Innova') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+	}
+	if (journey === 'MumToAur') {
+		if (vehicle === 'Mini') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Sedan') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'SUV') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Innova') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+	}
+	if (journey === 'MumToAhm') {
+		if (vehicle === 'Mini') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Sedan') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'SUV') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Innova') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+	}
+	if (journey === 'MumToPal') {
+		if (vehicle === 'Mini') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Sedan') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'SUV') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Innova') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+	}
+	if (journey === 'MumToVap') {
+		if (vehicle === 'Mini') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Sedan') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'SUV') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Innova') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+	}
+	if (journey === 'MumToSur') {
+		if (vehicle === 'Mini') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Sedan') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'SUV') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Innova') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+	}
+	if (journey === 'MumToSat') {
+		if (vehicle === 'Mini') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Sedan') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'SUV') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+		if (vehicle === 'Innova') {
+			message = message + ' RS';
+			book_message.innerHTML = message;
+		}
+	}
+
+	if (book_message.innerHTML) {
+		alert('Form Submitted Successfully!');
+	}
 	return true;
 };
