@@ -290,7 +290,7 @@ const bookingValidation = () => {
 	}
 
 	if (book_message.innerHTML) {
-		alert('Form Submitted Successfully!');
+		alert('Form Submission Successful.');
 	}
 	return true;
 };
